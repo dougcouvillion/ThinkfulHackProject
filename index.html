@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="scripts/jquery-2.0.3.js"></script>
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV6vhQDnwoCzeCKG1Q2Qp1RNp50mmEEsA&sensor=false">
     </script>
@@ -13,18 +14,24 @@
     </header>
     <div id="mainContent">
         <div id="searchParameters">
-            <form>
+            <form id="formSearch">
                 Enter your search terms here:<br>
-                <input type="text"></input><br>
-                <button id="submitSearch">Submit</button>
+                <input type="text" id='inputSearchTerms'></input><br>
+                <button id="buttonSearch" type="submit">Search</button>
             </form>
         </div>
-        <div id="mapCanvas"></div>
+        <div id="mapContainer">
+            <div id="mapTitle"><p><h2>Richmond, VA</h2></p></div>
+            <div id="mapCanvas"></div>
+        </div>
     </div>
     <div id="photos">
-        <p>Your photos will appear here...</p>
+        <p>Photos of your location will appear here...</p>
+        <div class="photoResult" id="photoDiv1"></div>
+        <div class="photoResult" id="photoDiv2"></div>
+        <div class="photoResult" id="photoDiv3"></div>
     </div>
-    <script type="text/javascript" src="scripts/hack.js"></script>
 
+    <script type="text/javascript" src="scripts/hack.js"></script>
 </body>
 </html>
