@@ -65,6 +65,7 @@ header {
     text-align: center;
     margin: 10px 10px;
 }
+
 #mainContent {
     height: 600px;
     width: 80%;
@@ -73,7 +74,14 @@ header {
     display: block;
 }
 
+#loginDiv {
+    display: block;
+    float: left;
+    margin: 35px 10px 10px 25px;
+}
+
 #searchParameters {
+    clear: left;
     float: left;
     margin: 10px 10px;
     padding: 10px 10px;
@@ -109,7 +117,7 @@ header {
 #photos {
     clear: both;
     display: block;
-    margin: 10px 0 0 300px;
+    margin: 10px 300px 0 300px;
     padding: 10px 0 0 0;
     border-top: 1px lightgray solid;
     width: 650px;
@@ -118,7 +126,7 @@ header {
 .photoResult {
     border: 1px lightgray solid;
     margin: 5px 5px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: inline-block;
 }
